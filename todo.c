@@ -1,6 +1,7 @@
 #include <ctype.h>
 #include <errno.h>
 #include <stdbool.h>
+#include <stdlib.h>
 #include <string.h>
 #include <time.h>
 
@@ -16,6 +17,16 @@ struct todo_item {
   struct tm creation_tm;
   char* description;
 };
+
+struct todo_item* new_todo_item(void)
+{
+  return (struct todo_item*) malloc(sizeof(struct todo_item));
+}
+
+void free_todo_item(struct todo_item* todo)
+{
+  free(todo);
+}
 
 int parse_todo_item(char* buffer, struct todo_item* todo)
 {
