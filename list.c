@@ -32,4 +32,5 @@ void insert_before(struct todo_item* old, struct todo_item* new)
     storage->next = new;
     new->prev = storage;
   }
+  // testing ...
 }
