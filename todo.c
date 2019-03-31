@@ -209,6 +209,6 @@ int save_todo_items(struct todo_item* head)
   }
 
   close_todo_file_for_writing(todo_file);
-
+    // komentar
   return 0;
 }
