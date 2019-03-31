@@ -91,7 +91,7 @@ int get_and_dispatch_input(struct todo_item* head)
 	   " |  |                              |              |-context tag\n"
 	   " |  |                              |-project tag\n"
 	   " |  |-creation date (optional)\n"
-	   " -priority (optional)\n");
+	   " -priority (optional)\n\n");
     return 0;
   }
 
